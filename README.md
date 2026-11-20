@@ -19,7 +19,7 @@ Double-click `index.html` to open in a browser. No Node.js, build step, API keys
 ## Publish for free using GitHub Pages
 
 1. On GitHub, create a repository, for example `riotkind-website`.
-2. Upload all four files to the **root** of the repository (not nested inside another folder).
+2. Upload `index.html`, `styles.css`, `script.js`, `README.md`, `.nojekyll`, and the complete `assets/` folder to the **root** of the repository (not nested inside another folder).
 3. Commit them to the `main` branch.
 4. In your repository, go to **Settings → Pages**.
 5. Under **Build and deployment**, choose **Deploy from a branch**.
@@ -47,3 +47,9 @@ Fonts are served from Google Fonts when available; local fallbacks are provided.
 The current look preserves the original structure while layering in a photocopied gig-poster aesthetic: torn paper edges, washi tape, rough-stamped labels, hand-marked notes, an acid-lime secondary accent, xerox grain and slightly imperfect outlines. All artwork is code/CSS or the included locally generated texture. There are no borrowed band graphics, no purchased assets, and no CSS libraries.
 
 To tone it down, lower the `opacity` of `body::after` in `styles.css`, remove the `.hero-patch` element in `index.html`, or remove the CSS block headed `THE 2000s GRUNGE PASS`. The original design is preserved above that section.
+
+## Riotkind v3: More pink, more purple, more grunge
+
+This revision intensifies the early-2000s photocopied festival-flyer aesthetic with hot pink and deep eggplant colors, a distressed **RIOT** headline, torn-note manifesto strip, extra stickers, hand-marked doodles, scratched ink, and xerox grain. The revised grunge layers live in the last CSS section titled `RIOTKIND v3: 50% MORE GRUNGE` so they are easy to tweak without changing the semantic HTML.
+
+The `assets` directory now contains locally generated background textures and SVG scrawls. These must be uploaded along with the HTML, CSS, and JavaScript files. Content remains clearly marked as a proposed company/festival concept, not an announced event. No domain, server, framework, build tool, or paid service is required.
