@@ -422,3 +422,161 @@ body::before {content:'';position:fixed;inset:0;z-index:109;pointer-events:none;
   .poster-label{width:82px;}
   .poster-label strong{font-size:15px;}
 }
+
+
+/* ================================================================
+   RIOTKIND v4 / NIGHT SHIFT
+   2000s underground metal, emo + punk fliers.
+   Dark ink, bruised-purple shadow, dried-rose details, worn silver.
+   This block overrides v3 without changing semantic HTML or behavior.
+   ================================================================ */
+:root {
+  --bg:#09080d;
+  --surface:#15101a;
+  --surface2:#201523;
+  --ink:#eae4e7;
+  --muted:#b7a9b4;
+  --pink:#b36b8e;
+  --pink-bright:#bf7b9b;
+  --pink-pale:#ddb1c9;
+  --outline:#564455;
+  --acid:#aa92b8;
+  --paper:#cec0c4;
+  --violet:#473050;
+  --dark-violet:#130e19;
+}
+body{background:#09080d;color:var(--ink)}
+::selection{background:#844765;color:#fff6f8}
+body::after{background-image:url('assets/noir-grit.png');opacity:.72;mix-blend-mode:screen;background-size:1024px 1024px}
+body::before{background:repeating-linear-gradient(180deg,transparent 0 6px,#03020730 7px 8px);opacity:.38}
+.site-header{background:#0b0910f7;border-bottom:2px solid #5b3a52;box-shadow:0 3px 0 #1a1021,0 8px 22px #000a}
+.wordmark-symbol{background:#2c1729;color:#d0a1bb;border-color:#a56c8d;box-shadow:3px 4px 0 #09060c,-2px -2px 0 #42253a}
+.wordmark-text>span,.footer-wordmark>span{color:#c68da9}
+.main-nav>a{color:#d1c3ce}
+.main-nav>a:hover{color:#f3d6e6}
+.main-nav .nav-contact{background:#302033;color:#f0d2e2;box-shadow:4px 4px 0 #0a060e;border-color:#8d6682;transform:rotate(-1deg)}
+.main-nav .nav-contact:hover{background:#693f60;color:#fff7fa}
+.hero{background:radial-gradient(ellipse at 77% 38%,#4a28413d,transparent 46%),radial-gradient(ellipse at 7% 92%,#30203737,transparent 49%),#0c0910;border-bottom:1px solid #51384d}
+.hero::before{background:url('assets/scratch-scrawl.svg') repeat,repeating-linear-gradient(-9deg,transparent 0 18px,#a18b9d0d 18px 19px,transparent 19px 48px);background-size:520px 520px,auto;opacity:.25;filter:grayscale(.7)}
+.hero-static{background:url('assets/scratched-ink.png');background-size:750px 1060px;opacity:.22;filter:grayscale(.8) brightness(.65)}
+.hero-glow{background:radial-gradient(ellipse at 61% 47%,#6435503b,transparent 63%)}
+.hero-grit{opacity:.28;filter:grayscale(.55)}
+.hero-lines{opacity:.6}
+.eyebrow{color:#cc9db6;letter-spacing:.16em}
+.eyebrow-line{background:#ae7e9a}
+.hero-print-note{background:#18111c;color:#a999ac;border:1px dashed #76566b;box-shadow:4px 4px #030206;transform:rotate(-2deg);font-size:11px}
+.hero h1{color:#e5dee1;text-shadow:3px 3px 0 #281724,8px 9px 0 #000;filter:none}
+.hero h1::before{color:#9f6e8a;opacity:.7}
+.hero h1 em{color:#c78dab;text-shadow:4px 5px 0 #422539,8px 9px 0 #050307;filter:contrast(.95)}
+.hero-marker-underline{background:linear-gradient(178deg,transparent 0 24%,#805069 26% 40%,transparent 43% 56%,#56405d 58% 72%,transparent 75%);opacity:.9}
+.hero-lede{color:#efe5e9;text-shadow:1px 2px 0 #090509}
+.hero-support{color:#b6aab5}
+.btn-primary{background:#a56b8a;color:#110a10;border:2px solid #c591ad;box-shadow:5px 6px 0 #241226}
+.btn-primary:hover{background:#cf9cba;color:#140b15}
+.btn-outline{border:2px solid #72566f;color:#e9d8e4;background:#1a111f;box-shadow:5px 6px 0 #070409}
+.btn-outline:hover{background:#352037}
+.hero-note{color:#a992a2}
+.hero-note .status-dot{background:#b785a4;box-shadow:0 0 0 4px #9c6a8e30}
+.hero-scribble{color:#9b6989;opacity:.55}
+.hero-scribble-b{color:#8f7b9e}
+.hero-art{filter:drop-shadow(17px 22px 0 #0009)}
+.hero-art::before{border-color:#936e89;opacity:.45}
+.poster-cutout{background:url('assets/scratched-ink.png'),repeating-linear-gradient(28deg,transparent 0 18px,#4f35451f 19px 20px),linear-gradient(117deg,#35202f 5%,#221521 51%,#140f1a 100%);background-size:cover,auto,auto;border:2px solid #866378;outline:6px solid #301b2a;box-shadow:inset 0 0 90px #0007,0 14px 18px #000a}
+.poster-rip{background:#7c496320;border-color:#9b70833c}
+.poster-label{background:#8b667c;color:#0f0910;border:3px solid #0d0910;box-shadow:6px 7px 0 #020203}
+.photo-stamp{background:#120b13bb;border:2px solid #a78b9f;color:#c2a3ba;box-shadow:3px 3px 0 #000a}
+.orbit-one{border-color:#aa8ca168}
+.orbit-two{border-color:#81667d88}
+.orbit-three{background:radial-gradient(circle at 38% 35%,#53304b,#311e34 57%,#100c18 78%);border:9px solid #97718c70;box-shadow:inset 0 0 50px #09050d,0 0 90px #54334a77}
+.art-top{background:#130d17;color:#ddd4dc}
+.art-main{color:#e9e1e8;text-shadow:5px 6px 0 #533045,10px 10px 0 #09050c}
+.art-period{color:#bc86a1}
+.art-bottom{background:#ad9ca7;color:#181019}
+.art-scrawl{color:#b791ab;text-shadow:1px 3px 0 #1a0d18}
+.art-star{color:#9b7d9d}
+.hero-patch{background:#76667c;color:#e8dbe5;border-color:#15111b;box-shadow:5px 8px 0 #010102}
+.poster-doodle{color:#af809c;text-shadow:3px 3px #120a17}
+.poster-doodle span{color:#897096}
+.hero-ripped-edge{background:#694055;opacity:1}
+.hero-edge{color:#8d768b}
+.tape-hero,.feature-tape{background:#90818a8f;filter:saturate(.45)}
+/* No bright ribbon. Dark wine-purple instead. */
+.ticker{background:linear-gradient(105deg,#4a293f,#69405b 52%,#49263e);border-block:2px solid #130a13;box-shadow:0 4px 0 #211020,0 -3px 0 #09060c;transform:rotate(-.4deg)}
+.ticker-track span{color:#e5cddc;font-size:22px}
+.ticker-track b{color:#b48da5}
+.ripped-note-band{background:#2b1b30;color:#d7c6d3;box-shadow:0 12px 0 #100a12}
+.ripped-note-band span{text-decoration-color:#93637e}
+.ripped-note-band strong{background:#6b455f;color:#f4e5ec;box-shadow:4px 5px 0 #070408}
+.ripped-note-band i{color:#b98bab}
+.section-label{color:#bb89a6}
+.section-title{color:#e4dde2;text-shadow:4px 4px 0 #412838,8px 8px 0 #040307}
+.section-title span{color:#c38aa8}
+.about-section{background:radial-gradient(ellipse at 14% 55%,#30223855,transparent 49%),url('assets/scratch-scrawl.svg') repeat,#0d0a10;background-size:auto,570px 570px,auto}
+.about-section::before{color:#8d638060}
+.about-body{border-left:2px dashed #75536a;padding-left:30px}
+.about-body .intro{color:#e9dde5}
+.about-body p{color:#b8a9b4}
+.about-signoff strong{border-bottom-color:#996c86}
+.about-doodle{color:#ad83a4}
+.handwritten-note{color:#ba8baf}
+.ventures-section{background:radial-gradient(ellipse at 20% 8%,#3d263c4d,transparent 56%),linear-gradient(180deg,#1b111f,#0c0a12 77%)}
+.feature-card{background:url('assets/scratched-ink.png'),radial-gradient(circle at 83% 31%,#59314f72,transparent 49%),linear-gradient(110deg,#422639 0%,#271628 55%,#13101b 100%);background-size:680px 800px,auto,auto;border:2px solid #7e5b79;box-shadow:12px 15px 0 #030205,0 0 0 9px #46273f3b}
+.feature-card::before{color:#a9799477}
+.feature-card::after{background:repeating-linear-gradient(-25deg,transparent 0 18px,#7d5c6d14 20px 21px),url('assets/noir-grit.png');background-size:auto,670px 670px;opacity:.53;mix-blend-mode:screen}
+.feature-stamp{color:#bd9db3;border-color:#a482a1;opacity:.72;background:#150f1a66}
+.feature-ink{color:#b083a080;text-shadow:5px 5px 0 #1b0b21}
+.pill{background:#9e778e;color:#161017;border:2px dashed #bda2b0;box-shadow:3px 4px 0 #190c19}
+.feature-card h3{color:#eae3e9;text-shadow:4px 5px 0 #623a59,9px 10px 0 #130a14}
+.feature-card h3 span{color:#cba2b9}
+.feature-pretitle{color:#c7a8bb}
+.feature-tags span{border-color:#916c87;background:#211421da;color:#e0cddd}
+.feature-bottom{border-color:#9d758f66}
+.feature-bottom span{color:#a88fa4}
+.feature-annotation{color:#b99db0}
+.small-venture{background:linear-gradient(150deg,#241926,#130f1a);border:2px solid #61465d;box-shadow:7px 8px 0 #030204}
+.small-venture::before{background:url('assets/noir-grit.png');opacity:.55;background-size:600px 600px}
+.small-venture h3{color:#e9e0e5}
+.small-icon{color:#a77f99}
+.values-section{background:radial-gradient(circle at 80% 15%,#33253c4d,transparent 42%),#100d15}
+.values-heading>p{color:#c7b7c1}
+.values-graphic{color:#af8cac;border:2px dashed #74556f}
+.values-graphic span{color:#b785a1}
+.value-card{border:2px solid #5d485c;background:#201823;box-shadow:6px 7px 0 #050308}
+.value-card::before{background:url('assets/noir-grit.png');opacity:.5;background-size:580px 580px}
+.value-card>span{color:#b68eaa}
+.value-card h3{color:#eadfe5}
+.value-card p{color:#b6a6b3}
+.solidarity-box{background:linear-gradient(140deg,#2a1d2a,#191320);border:2px solid #765671;border-left:8px solid #a27091;box-shadow:9px 9px 0 #050306}
+.solidarity-mark{color:#ae83a1}
+.solidarity-box h3{color:#e9dce6}
+.solidarity-box p{color:#cbbbc7}
+.statement-section{background:radial-gradient(ellipse at 50% 40%,#60324955,transparent 65%),repeating-linear-gradient(110deg,#ded0d50a 0 2px,transparent 2px 27px),#241522;border-top:3px solid #603e5c;border-bottom:3px solid #8e607d}
+.statement-sticker{border-color:#a67b9e;color:#e5d8e2;text-shadow:2px 2px #1d0f2a}
+.statement-scrawl{color:#b591ad}
+.statement-inner h2{color:#e8dfe5;text-shadow:5px 5px 0 #5d3a54,10px 10px 0 #0c0710}
+.statement-inner h2 span{color:#c497b0}
+.connect-section{background:radial-gradient(ellipse at 9% 40%,#3d2a4a36,transparent 48%),#0c0a12}
+.connect-scratch{color:#b38da8}
+.connect-status{background:#221826;border:2px dashed #735470;box-shadow:6px 6px 0 #030204}
+.site-footer{background:#0a080d}
+.footer-tear{background:#60405a}
+.footer-top>p{color:#bea0b5}
+.back-to-top{border-color:#a17091}
+.footer-bottom{border-color:#55405477}
+@media(max-width:760px){
+ .main-nav{background:#16101a;border-bottom:3px solid #76516a}
+ .hero h1{font-size:clamp(88px,16vw,136px)}
+ .ripped-note-band .container{font-size:clamp(22px,5vw,30px)}
+}
+@media(max-width:480px){
+ .hero h1{font-size:clamp(80px,17.5vw,99px)}
+ .ticker-track span{font-size:20px}
+ .hero-art{height:300px}
+ .section-title{font-size:clamp(53px,10.5vw,72px)}
+}
+@media(max-width:360px){
+ .hero h1{font-size:73px}
+}
+/* Keep all long-form copy clean against the textured surroundings. */
+.about-section{background:radial-gradient(ellipse at 14% 55%,#30223855,transparent 49%),linear-gradient(135deg,#0c0a10,#13101a 75%)}
+@media(max-width:480px){.statement-sticker{right:14px}}

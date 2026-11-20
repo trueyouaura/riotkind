@@ -53,3 +53,9 @@ To tone it down, lower the `opacity` of `body::after` in `styles.css`, remove th
 This revision intensifies the early-2000s photocopied festival-flyer aesthetic with hot pink and deep eggplant colors, a distressed **RIOT** headline, torn-note manifesto strip, extra stickers, hand-marked doodles, scratched ink, and xerox grain. The revised grunge layers live in the last CSS section titled `RIOTKIND v3: 50% MORE GRUNGE` so they are easy to tweak without changing the semantic HTML.
 
 The `assets` directory now contains locally generated background textures and SVG scrawls. These must be uploaded along with the HTML, CSS, and JavaScript files. Content remains clearly marked as a proposed company/festival concept, not an announced event. No domain, server, framework, build tool, or paid service is required.
+
+## Riotkind v4: Night Shift (dark emo / punk / metal)
+
+This version turns down the previous bright pink and violet into a darker, heavier palette: near-black ink, bruised plum, smoky purple, dusty-rose typography, worn-silver lettering and deep wine-colored poster details. Grunge textures, tape, scratched ink and ripped-paper silhouettes remain, but the overall look is moodier and less neon.
+
+The final override section in `styles.css` is labelled `RIOTKIND v4 / NIGHT SHIFT`; the original styles are retained above for easy comparison. `assets/noir-grit.png` is a generated transparent ink-and-scratch texture bundled locally with the site. No new dependencies, JavaScript changes, tracking or invented business details.
