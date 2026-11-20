@@ -1,26 +1,24 @@
-// No dependencies or tracking. Works as a static GitHub Pages site.
-const menuButton = document.querySelector('.menu-toggle');
-const nav = document.getElementById('main-nav');
-
-function closeMenu() {
-  menuButton.setAttribute('aria-expanded', 'false');
-  menuButton.setAttribute('aria-label', 'Open menu');
-  nav.classList.remove('is-open');
-}
-
-menuButton.addEventListener('click', () => {
-  const isOpen = menuButton.getAttribute('aria-expanded') === 'true';
-  menuButton.setAttribute('aria-expanded', String(!isOpen));
-  menuButton.setAttribute('aria-label', isOpen ? 'Open menu' : 'Close menu');
-  nav.classList.toggle('is-open', !isOpen);
-});
-
-nav.querySelectorAll('a').forEach(link => link.addEventListener('click', closeMenu));
-document.addEventListener('keydown', event => {
-  if (event.key === 'Escape') closeMenu();
-});
-document.addEventListener('click', event => {
-  if (!nav.contains(event.target) && !menuButton.contains(event.target)) closeMenu();
-});
-
-document.getElementById('year').textContent = new Date().getFullYear();
+(() => {
+  const menu = document.querySelector('.menu-button');
+  const nav = document.querySelector('#primary-nav');
+  const year = document.querySelector('#copyright-year');
+  if (year) year.textContent = new Date().getFullYear();
+  if (!menu || !nav) return;
+  function setOpen(open) {
+    menu.setAttribute('aria-expanded', String(open));
+    menu.setAttribute('aria-label', open ? 'Close navigation' : 'Open navigation');
+    nav.classList.toggle('is-open', open);
+    document.body.classList.toggle('menu-open', open);
+  }
+  menu.addEventListener('click', () => setOpen(menu.getAttribute('aria-expanded') !== 'true'));
+  nav.querySelectorAll('a').forEach(link => link.addEventListener('click', () => setOpen(false)));
+  document.addEventListener('keydown', event => {
+    if (event.key === 'Escape' && menu.getAttribute('aria-expanded') === 'true') {
+      setOpen(false);
+      menu.focus();
+    }
+  });
+  window.matchMedia('(min-width: 921px)').addEventListener('change', event => {
+    if (event.matches) setOpen(false);
+  });
+})();

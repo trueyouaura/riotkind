@@ -1,61 +1,49 @@
-# Riotkind Entertainment website
+# RIOTKIND Entertainment | Website v5
 
-A responsive, single-page website prototype for **Riotkind Entertainment**, featuring its planned flagship festival **Manic in the Middle**.
+This is a **static, GitHub Pages-ready** website for the Riotkind Entertainment working brand. It is based on the selected **Concept B: early-2000s punk / emo collage** identity, and uses the actual outlined Riotkind SVG logo assets, not placeholder text.
 
-**Important:** Riotkind Entertainment and Manic in the Middle are working names pending trademark clearance. The company has not yet been formed and the festival has no announced dates, venue, lineup, or ticket sales.
+## What's inside
 
-## Files
+- `index.html`: the full accessible single-page site
+- `styles.css`: responsive layout, poster-collage design, textures, mobile and reduced-motion styles
+- `script.js`: the accessible responsive navigation and current copyright year
+- `assets/`: official working Riotkind vector logos, textures and favicon
+- `.nojekyll`: makes GitHub Pages serve the static files as provided
 
-- `index.html` — content and semantic structure
-- `styles.css` — visual design and mobile styling, including the 2000s-grunge design pass
-- `assets/film-grain.png` — locally generated subtle photocopy-style grain texture
-- `script.js` — mobile navigation and automatic copyright year
-- `.nojekyll` — lets GitHub Pages serve this as a plain static website
+## Run it locally
 
-## Preview locally
+Open `index.html` in a browser. To use a local HTTP server, from this folder run:
 
-Double-click `index.html` to open in a browser. No Node.js, build step, API keys or database are needed.
+```bash
+python3 -m http.server 8000
+```
 
-## Publish for free using GitHub Pages
+Then open `http://localhost:8000`.
 
-1. On GitHub, create a repository, for example `riotkind-website`.
-2. Upload `index.html`, `styles.css`, `script.js`, `README.md`, `.nojekyll`, and the complete `assets/` folder to the **root** of the repository (not nested inside another folder).
-3. Commit them to the `main` branch.
-4. In your repository, go to **Settings → Pages**.
-5. Under **Build and deployment**, choose **Deploy from a branch**.
-6. Select **main** and **/(root)**, then **Save**.
-7. Your website will be available at `https://YOUR-USERNAME.github.io/riotkind-website/` after deployment.
+## Publish with GitHub Pages (no domain necessary)
 
-You do **not** need to purchase a domain. GitHub Free requires a public repository to publish on GitHub Pages. Keep the repository private until you're comfortable putting the working names online.
+1. Create a GitHub repository (for example `riotkind-website`).
+2. Upload **the contents of this folder**, with `index.html` at the repository root.
+3. Commit the files on the `main` branch.
+4. Go to **Settings → Pages → Build and deployment**.
+5. Set **Source** to `Deploy from a branch`, select `main`, folder `/(root)`, then Save.
+6. GitHub Pages will serve the site at `https://YOUR-USERNAME.github.io/riotkind-website/` once deployment is complete.
 
-## Editing
+All site asset paths are relative. No Node build, paid hosting, backend, API keys or custom domain is required. Google Fonts enhance the design but local fallback fonts are defined.
 
-- Change the page wording in `index.html`.
-- Change pink, background and other colors near the top of `styles.css` under `:root`.
-- Update the flagship festival section once details are actually confirmed.
-- Add an official contact email or social links in `#connect` once those accounts exist. No contact address or form is included yet because none has been confirmed.
-- If you later change the repository name, GitHub Pages will give you a correspondingly different URL. There are no root-absolute asset paths to break when hosted under a project URL.
+## Editing guidance
 
-## Privacy and accessibility
+- Change site copy in `index.html`.
+- Change core colors and styling in the `:root` block in `styles.css`.
+- The primary and icon logos are in `assets/riotkind-primary.svg` and `assets/riotkind-rk-heart.svg`.
+- The website intentionally has **no functioning contact form, newsletter signup, social URLs, ticket-sale links, or announcements** until real destinations are available.
+- Keep the early-stage copy current and do not list unconfirmed shows, venues, artists, sponsors, or dates.
+- The brand and festival names are working names pending trademark clearance. Site publication constitutes public brand use, so consider waiting to publish publicly until comfortable with that risk.
 
-No analytics, cookies, contact-form collection, or backend. Responsive layout, keyboard-operable mobile menu, visible focus states, semantic headings, skip-to-content link, and reduced-motion support.
+## Accessibility
 
-Fonts are served from Google Fonts when available; local fallbacks are provided.
+Semantic regions, a skip-to-content link, focus styling, keyboard-operable mobile navigation with Escape support, reduced-motion styles, and contrast-aware typography are included. Use the icon alone in compact spaces and the outlined main logo in larger placements.
 
-## 2000s-grunge design pass
+## Credits / status
 
-The current look preserves the original structure while layering in a photocopied gig-poster aesthetic: torn paper edges, washi tape, rough-stamped labels, hand-marked notes, an acid-lime secondary accent, xerox grain and slightly imperfect outlines. All artwork is code/CSS or the included locally generated texture. There are no borrowed band graphics, no purchased assets, and no CSS libraries.
-
-To tone it down, lower the `opacity` of `body::after` in `styles.css`, remove the `.hero-patch` element in `index.html`, or remove the CSS block headed `THE 2000s GRUNGE PASS`. The original design is preserved above that section.
-
-## Riotkind v3: More pink, more purple, more grunge
-
-This revision intensifies the early-2000s photocopied festival-flyer aesthetic with hot pink and deep eggplant colors, a distressed **RIOT** headline, torn-note manifesto strip, extra stickers, hand-marked doodles, scratched ink, and xerox grain. The revised grunge layers live in the last CSS section titled `RIOTKIND v3: 50% MORE GRUNGE` so they are easy to tweak without changing the semantic HTML.
-
-The `assets` directory now contains locally generated background textures and SVG scrawls. These must be uploaded along with the HTML, CSS, and JavaScript files. Content remains clearly marked as a proposed company/festival concept, not an announced event. No domain, server, framework, build tool, or paid service is required.
-
-## Riotkind v4: Night Shift (dark emo / punk / metal)
-
-This version turns down the previous bright pink and violet into a darker, heavier palette: near-black ink, bruised plum, smoky purple, dusty-rose typography, worn-silver lettering and deep wine-colored poster details. Grunge textures, tape, scratched ink and ripped-paper silhouettes remain, but the overall look is moodier and less neon.
-
-The final override section in `styles.css` is labelled `RIOTKIND v4 / NIGHT SHIFT`; the original styles are retained above for easy comparison. `assets/noir-grit.png` is a generated transparent ink-and-scratch texture bundled locally with the site. No new dependencies, JavaScript changes, tracking or invented business details.
+Riotkind Concept B vector marks originate from the working Riotkind logo kit developed for this project. No purchased or licensed external imagery is required. This is a proposed venture, not an incorporated operating company.

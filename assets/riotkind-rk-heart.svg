@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-label="Riotkind RK heart icon, pink and worn silver"><title>Riotkind RK heart icon, pink and worn silver</title><defs></defs><g fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M 255 431 C 210 392 109 324 85 250 C 55 157 103 105 163 111 C 203 115 232 145 256 183 C 280 142 316 109 356 111 C 430 105 461 169 435 255 C 410 326 320 387 255 431" stroke="#B36B8E" stroke-width="17"/>
+  <path d="M 246 428 C 176 356 100 323 77 236 M 87 191 C 91 111 183 94 255 174 M 260 174 C 330 91 416 101 443 186 M 436 269 C 407 334 345 378 265 430" stroke="#DDB1C9" stroke-width="4.8" opacity=".85"/>
+  <path d="M 96 245 L 89 256 M 401 312 L 388 331 M 164 105 L 179 102" stroke="#6B455F" stroke-width="12"/>
+</g><g fill="none" stroke="#EAE4E7" stroke-width="21" stroke-linecap="round" stroke-linejoin="miter">
+ <path d="M 155 191 L 129 344 M 151 188 Q 216 166 222 216 Q 228 260 145 273 M 158 270 L 222 348" />
+ <path d="M 277 189 L 245 350 M 355 185 L 280 264 L 360 348"/>
+ </g>
+ <g fill="none" stroke="#DDB1C9" stroke-width="3.4" stroke-linecap="round" opacity=".85">
+ <path d="M 143 195 L 113 343 M 161 283 L 231 353 M 265 201 L 236 342 M 288 262 L 372 351"/>
+ </g><g stroke="#B36B8E" stroke-width="8" stroke-linecap="round" fill="none" opacity=".9"><path d="M 50 255 L 23 249 M 70 308 L 37 327 M 451 267 L 480 258 M 430 318 L 465 337"/></g></svg>
