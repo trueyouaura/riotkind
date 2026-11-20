@@ -7,7 +7,8 @@ A responsive, single-page website prototype for **Riotkind Entertainment**, feat
 ## Files
 
 - `index.html` — content and semantic structure
-- `styles.css` — visual design and mobile styling
+- `styles.css` — visual design and mobile styling, including the 2000s-grunge design pass
+- `assets/film-grain.png` — locally generated subtle photocopy-style grain texture
 - `script.js` — mobile navigation and automatic copyright year
 - `.nojekyll` — lets GitHub Pages serve this as a plain static website
 
@@ -40,3 +41,9 @@ You do **not** need to purchase a domain. GitHub Free requires a public reposito
 No analytics, cookies, contact-form collection, or backend. Responsive layout, keyboard-operable mobile menu, visible focus states, semantic headings, skip-to-content link, and reduced-motion support.
 
 Fonts are served from Google Fonts when available; local fallbacks are provided.
+
+## 2000s-grunge design pass
+
+The current look preserves the original structure while layering in a photocopied gig-poster aesthetic: torn paper edges, washi tape, rough-stamped labels, hand-marked notes, an acid-lime secondary accent, xerox grain and slightly imperfect outlines. All artwork is code/CSS or the included locally generated texture. There are no borrowed band graphics, no purchased assets, and no CSS libraries.
+
+To tone it down, lower the `opacity` of `body::after` in `styles.css`, remove the `.hero-patch` element in `index.html`, or remove the CSS block headed `THE 2000s GRUNGE PASS`. The original design is preserved above that section.
